@@ -17,6 +17,7 @@ GLint window_height = 600;
 vector<double> X;
 vector<double> Y;
 
+int initial_step = 10;
 int step = 2;
 double angle = 360 * GR;
 
@@ -35,7 +36,7 @@ void golden_ratio(){
 		if(i == 0){
 			c_x = x;
 			c_y = y;
-			n_x = x + step;
+			n_x = x + initial_step;
 			n_y = y;
 			X.push_back(n_x);
 			Y.push_back(n_y);
